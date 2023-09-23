@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Your Not Alone</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+          <style>
+            #banner{
+                height: 250px;
+                width:100%;
+                
+            }
+          </style>
+    </head>
+    {%include "nav.html"%}
+     <div>
+        <img  id="banner" src="/static/top_img (2).jpg" class="img-fluid" alt="NaN">
+     </div> 
+     <div class="p-3 mb-2 bg-info-subtle text-emphasis-info mt-3" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <p class="text-start m-4" ><b>Positive mental health is crucial in today's world, as it profoundly influences every aspect of our lives. Mental health can impact our thoughts, actions, and interactions. It empowers us to navigate challenges, build meaningful relationships, and make informed decisions.</b></p>
+     </div>  
+     <div class="text-start m-4" class="p-3 mb-2 bg-secondary text-white" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <p class="fs-1"><b>Things to keep in mind while using Social Media</b></p>
+        <ol>
+            <li><b>SET LIMITS ON HOW YOU USE SOCIAL MEDIA</b>
+                <p>It's essential to prevent social media from taking focus away from important parts of your life. So consider committing to times and activities where you will be social media-free. For example, plan not to use social media when chatting to your partner, playing with a child, or otherwise socialising in person. This creates a better quality connection with the people you care about.</p>
+            </li>
+            <li><b>USE SOCIAL MEDIA TO CONNECT</b> 
+                <p>Social media allows you to connect anywhere and anytime. This is a huge plus, especially if you are far away from people you care about or have challenges around leaving home.  
+
+                    However, research shows that people who browse or scroll social media passively experience more symptoms of depression than people who are actively posting or engaging with others. So, if you're using social media to feel connected, less scrolling! Instead, post more, tag people, chat with people you know in the offline world, or get to know some new people online.  </p>
+            </li>
+            <li><b>UNFOLLOW ACCOUNTS THAT MAKE YOU FEEL BAD</b>
+                <p>Make note of the posts or accounts that bring up negative emotions like fear, guilt, or not being good enough. Consider hiding or unfollowing these accounts. You can also report accounts or ads that you think could be unsafe for you or others.  </p>
+            </li>
+            <li><b>CREATE A SAFE SOCIAL MEDIA SPACE</b>
+                <p>It's time to start creating a social media feed that makes you feel optimistic, confident, and safe. What are your passions, interests and hobbies? Whether you’re interested in learning guitar, activism or DIY projects there will be people to follow who have great advice or help you get inspired. </p>
+            </li>
+        </ol>
+     </div> 
+     <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning" class="border border-primary" class="text-start m-4">
+        <p><b>Know how many hours do different age groups spend on social media every day</b></p>
+        <form action="/stats" method="post">
+        <div class="text-start m-4" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <label><b>Age</b></label><br>
+            <input type="number" name="age">
+        </div>
+        <div class="text-start m-4" class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <label><b>Hours spent in social media</b></label><br>
+            <input type="number" name="usage">
+        </div>
+        <input class="btn btn-primary" type="submit" name="submit">
+        
+        </form>
+     </div>
+    {%include "footer.html"%}
+</html>

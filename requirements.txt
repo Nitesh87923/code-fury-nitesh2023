@@ -1,1 +1,6 @@
 Flask
+matplotlib
+seaborn
+gunicorn
+pymysql
+sqlalchemy
